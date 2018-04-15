@@ -29,7 +29,7 @@ Something here...example
 ```
 becomes
 ```
-Something here...This is a very looooong string
+Something here...This is a very looooong string.
 ```
 
 ### Example 2
@@ -48,7 +48,7 @@ becomes
 Something here...<img src="|" height=image height width=image width>
 ```
 Note the `|` indicates where the cursor is.
-Then you can input the image url there. Having done that, you type `TAB` and jump to the next position specified by another pair of `@`:
+Then you can input the image url there. Having done that, you type `TAB` to jump to the next position specified by another pair of `@`:
 ```
 Something here...<img src="http://url.to.image/" height=| width=image width>
 ```
@@ -57,6 +57,7 @@ After all the contents between pairs of `@` are already input, hit another `TAB`
 ```
 Something here...<img src="http://url.to.image/" height=100 width=100>|
 ```
+Then you can continue to do your work.
 
 ### Example 3
 Put the following in `~/.emacs.muban`:
@@ -93,6 +94,7 @@ Put the following in `~/.emacs.muban`:
  <li>@content@</li>#1
 </ul>#0
 ```
+Note again the form of the formula is free, so you can try something like `haha#2hehe#9ahah`(the template body should be modified accordingly of course).
 After you type `list2.3` at any point in an Emacs buffer and hit `key`, the template string appears in replace of the formula:
 ```
 Something here...
@@ -122,4 +124,7 @@ Of course you can put multiple templates in `~/.emacs.muban`:
 #0
 <img src="@url here@" height=@image height@ width=@image width@>#0
 ```
-The blank line between the two template definitions can be safely ignored. In fact, all the blank characters between the last character of the last template and the `#muban-begin` of the next definition, including `\t` and `\n`, are ignored.
+The blank line between the two template definitions can be safely ignored. In fact, all the blank characters between the last character of the last template definition and the `#muban-begin` of the next definition, including `\t` and `\n`, are ignored.
+
+## Notes
+* To use literal `#` and `@` in you template, use `\` to escape: `\@string\#1@content@\@string\#2` will become `@string#1|@string#2`, where `|` is the cursor.
