@@ -1,6 +1,6 @@
 # muban.el
 
-This simple package allows you to quickly insert pre-defined template strings with just a few keystrokes.
+This lightweight package that allows you to quickly insert pre-defined template strings with just a few keystrokes.
 
 ## Syntax
 The definitions of templates are placed in a single file `~/.emacs.muban`.
