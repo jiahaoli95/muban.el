@@ -127,5 +127,5 @@ Of course you can put multiple templates in `~/.emacs.muban`:
 The blank line between the two template definitions can be safely ignored. In fact, all the blank characters between the last character of the last template definition and the `#muban-begin` of the next definition, including `\t` and `\n`, are ignored.
 
 ## Notes
-* To use literal `#` and `@` in you template, use `\` to escape: `\@string\#1@content@\@string\#2` will become `@string#1|@string#2`, where `|` is the cursor.
+* To use literal `#` and `@` in you template, use `\` to escape. For example, `\@string\#1@content@\@string\#2` will become `@string#1|@string#2`, where `|` is the cursor.
 * If `TAB` conflicts with existing keymaps, you can use `(define-key muban-mode-map (kbd "new key") 'muban-next)` to bind `new key` to jumping to the next `@` position.
