@@ -1,6 +1,9 @@
-# muban.el
+# muban.el [![Melpa Status](http://melpa.milkbox.net/packages/muban-badge.svg)](http://melpa.milkbox.net/#/muban)
 
 This lightweight package allows you to quickly insert pre-defined template strings with just a few keystrokes.
+
+## Setup
+Install it from MELPA.
 
 ## Syntax
 The definitions of templates are placed in a single file `~/.emacs.muban`.
