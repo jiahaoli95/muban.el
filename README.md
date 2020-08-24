@@ -1,4 +1,4 @@
-# muban.el [![Melpa Status](http://melpa.milkbox.net/packages/muban-badge.svg)](http://melpa.milkbox.net/#/muban)
+# muban.el [![MELPA](https://melpa.org/packages/muban-badge.svg)](https://melpa.org/#/muban)
 
 This lightweight package allows you to quickly insert pre-defined template strings with just a few keystrokes.
 
